@@ -15,7 +15,7 @@ public class Calculadora {
             case '+' :
                 // Operación suma:
                 int suma = numero1 + numero2;
-                System.out.println("La suma es " + suma);
+                System.out.println("La resta es " + suma);
                 break;
             case '-' :
                 // Operación resta:
@@ -33,6 +33,18 @@ public class Calculadora {
                 para que el resultado decimal sea aproximado correctamente. **/
                 double division = (double) numero1 / numero2;
                 System.out.println("La división es " + division);
+                break;
+            case '%' :
+                // Operación módulo
+                int modulo = numero1% numero2;
+                System.out.println("El modulo es " + modulo);
+                break;
+            case '^' :
+                // Operación potencia:
+                /* Es necesario registrar los datos en double debido a los requirimientos
+                de Math.pow()*/
+                double potencia = Math.pow(numero1, numero2);
+                System.out.println("La división es " + potencia);
                 break;
             default:
                 System.out.println("Operación inválida");
