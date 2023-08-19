@@ -44,7 +44,7 @@ public class Calculadora {
                 /* Es necesario registrar los datos en double debido a los requirimientos
                 de Math.pow()*/
                 double potencia = Math.pow(numero1, numero2);
-                System.out.println("La división es " + potencia);
+                System.out.println("La potencia es " + potencia);
                 break;
             default:
                 System.out.println("Operación inválida");
